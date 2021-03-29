@@ -1,0 +1,58 @@
+body {
+  background: #e5e5e5;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding: 0 21px;
+  background: #cf2b2b;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 92px;
+  width: 100%;
+}
+.nome {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.nome h1 {
+  font-family: "Righteous", cursive;
+  font-size: 44px;
+  font-weight: 400;
+}
+.nome p {
+  font-size: 18px;
+}
+
+.baseboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  padding: 15px 25px;
+}
+.close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+  border-radius: 100px;
+  text-align: center;
+  background: #cbcbcb;
+  height: 100%;
+  width: 100%;
+}
+.close-text {
+  width: 200px;
+}
