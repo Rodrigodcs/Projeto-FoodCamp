@@ -46,9 +46,10 @@ body {
 .desserts-box {
   display: flex;
   align-items: center;
-  margin-left: 19px;
+  overflow: scroll;
+  padding-left: 19px;
   margin-bottom: 25px;
-  width: 90%;
+  width: 100%;
   height: 230px;
 }
 .main-card {
@@ -69,15 +70,20 @@ img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: 0 -4px;
+  /*object-position: 0 -4px;*/
 }
+.overflow-padding {
+  min-width: 4px;
+  height: 1px;
+}
+/*
 .nome {
 }
 .descrição {
 }
 .preco {
 }
-
+*/
 .baseboard {
   display: flex;
   justify-content: center;
