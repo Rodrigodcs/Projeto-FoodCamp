@@ -9,6 +9,7 @@ body {
   padding: 0 21px;
   background: #cf2b2b;
   position: fixed;
+  z-index: 1;
   left: 0;
   top: 0;
   height: 92px;
@@ -55,15 +56,24 @@ body {
 .desserts-box {
   margin-bottom: 150px;
 }
-.main-card {
+.main-card,
+.drink-card,
+.dessert-card {
   background-color: white;
   border-radius: 10px;
   padding: 18px 14px 14px 15px;
-  box-shadow: 0px 0px 10px -4px grey;
+
   min-width: 172px;
   height: 216px;
   margin-right: 16px;
-  border: green solid 5px;
+  position: relative;
+}
+.card-content {
+  position: absolute;
+  width: 144px;
+  height: 185px;
+  left: 14px;
+  top: 18px;
 }
 .image {
   width: 144px;
@@ -74,16 +84,25 @@ img {
   height: 100%;
   border-radius: 5px;
   object-fit: cover;
-  /*object-position: 0 -4px;*/
 }
 h2 {
   font-weight: 700;
   font-size: 16px;
   color: #333333;
+  margin-top: 5px;
 }
-.descrição {
+.description {
+  color: #a6a6a6;
+  font-weight: 300;
+  font-size: 15px;
+  margin-top: 5px;
 }
-.preco {
+.description p {
+  margin-bottom: 2px;
+}
+.price {
+  position: absolute;
+  bottom: 0px;
 }
 .overflow-padding {
   min-width: 4px;
@@ -96,6 +115,7 @@ h2 {
   align-items: center;
   background-color: white;
   position: fixed;
+  z-index: 1;
   left: 0;
   bottom: 0;
   height: 92px;
