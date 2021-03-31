@@ -3,6 +3,8 @@ body {
   font-weight: 400;
   font-family: "Roboto", sans-serif;
 }
+
+/* CABEÇALHO ---------------------------------------------------------------------------------*/
 .header {
   display: flex;
   align-items: center;
@@ -31,6 +33,7 @@ body {
   font-size: 18px;
 }
 
+/* CORPO -------------------------------------------------------------------------------------*/
 .main-section {
   margin-top: 130px;
 }
@@ -62,7 +65,7 @@ body {
   background-color: white;
   border-radius: 10px;
   padding: 18px 14px 14px 15px;
-
+  position: relative;
   min-width: 172px;
   height: 216px;
   margin-right: 16px;
@@ -103,12 +106,34 @@ h2 {
 .price {
   position: absolute;
   bottom: 0px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
 }
 .overflow-padding {
   min-width: 4px;
   height: 1px;
 }
+/* SELEÇÃO ----------------------------------------------------------------------------------*/
+.selection {
+  display: none;
+  position: absolute;
+  border-radius: 10px;
+  border: #32b72f solid 5px;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+ion-icon {
+  font-size: 20px;
+  color: #32b72f;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
 
+/* RODAPÉ ------------------------------------------------------------------------------------*/
 .baseboard {
   display: flex;
   justify-content: center;
@@ -138,11 +163,13 @@ h2 {
   width: 200px;
 }
 
+/* TELA DE CONFIRMAÇÃO ----------------------------------------------------------------------*/
 .confirmation-background {
   display: none;
   align-items: center;
   justify-content: center;
   position: fixed;
+  z-index: 2;
   left: 0;
   top: 0;
   height: 100%;
@@ -179,6 +206,7 @@ h2 {
   margin-bottom: 30px;
 }
 .confirm {
+  color: #50d074;
   display: flex;
   margin-bottom: 25px;
   flex-direction: column;
@@ -187,5 +215,5 @@ h2 {
   width: 330px;
   height: 50px;
   border-radius: 100px;
-  background-color: black;
+  background-color: white;
 }
