@@ -152,6 +152,7 @@ ion-icon {
   padding: 15px 25px;
 }
 .close {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -165,6 +166,23 @@ ion-icon {
 }
 .close-text {
   width: 200px;
+}
+.confirmation-button {
+  position: absolute;
+  background-color: #32b72f;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  text-align: center;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.confirmation-button p {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.018em;
 }
 
 /* TELA DE CONFIRMAÇÃO ----------------------------------------------------------------------*/

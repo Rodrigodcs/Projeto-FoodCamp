@@ -25,7 +25,7 @@
   <div class="main-section">
     <div class="main-tag"><p>Primeiro, seu prato</p></div>
     <ul class="main-box">
-      <il class="main-card presunto" onclick="select('presunto')">
+      <il class="main-card presunto" onclick="selectMain('presunto')">
         <div class="selection">
           <ion-icon name="checkmark-circle"></ion-icon>
         </div>
@@ -38,11 +38,11 @@
             <p>Isso isso isso isso</p>
           </div>
           <div class="price">
-            <p>R$ <span id="teste">3,00</span></p>
+            <p>R$ <span id="teste">3,50</span></p>
           </div>
         </div>
       </il>
-      <il class="main-card bife" onclick="select('bife')">
+      <il class="main-card bife" onclick="selectMain('bife')">
         <div class="selection">
           <ion-icon name="checkmark-circle"></ion-icon>
         </div>
@@ -56,11 +56,11 @@
             <p>Acompanha feijão</p>
           </div>
           <div class="price">
-            <p>R$ <span id="teste">3,00</span></p>
+            <p>R$ <span id="teste">8,00</span></p>
           </div>
         </div>
       </il>
-      <il class="main-card spaghetti" onclick="select('spaghetti')">
+      <il class="main-card spaghetti" onclick="selectMain('spaghetti')">
         <div class="selection">
           <ion-icon name="checkmark-circle"></ion-icon>
         </div>
@@ -74,11 +74,11 @@
             <p>Queijo ralado</p>
           </div>
           <div class="price">
-            <p>R$ <span id="teste">3,00</span></p>
+            <p>R$ <span id="teste">12,00</span></p>
           </div>
         </div>
       </il>
-      <il class="main-card frango" onclick="select('frango')">
+      <il class="main-card frango" onclick="selectMain('frango')">
         <div class="selection">
           <ion-icon name="checkmark-circle"></ion-icon>
         </div>
@@ -92,7 +92,7 @@
             <p>Um pouco de batata</p>
           </div>
           <div class="price">
-            <p>R$ <span id="teste">3,00</span></p>
+            <p>R$ <span id="teste">11,50</span></p>
           </div>
         </div>
       </il>
@@ -103,7 +103,7 @@
   <div class="drinks-section">
     <div class="drinks-tag">Agora, sua bebida</div>
     <ul class="drinks-box">
-      <il class="drink-card tamarindo" onclick="select('tamarindo')">
+      <il class="drink-card tamarindo" onclick="selectDrink('tamarindo')">
         <div class="selection">
           <ion-icon name="checkmark-circle"></ion-icon>
         </div>
@@ -117,11 +117,11 @@
             <p>Tem gosto de laranja</p>
           </div>
           <div class="price">
-            <p>R$ <span id="teste">3,00</span></p>
+            <p>R$ <span id="teste">1,50</span></p>
           </div>
         </div>
       </il>
-      <il class="drink-card tubaina" onclick="select('tubaina')">
+      <il class="drink-card tubaina" onclick="selectDrink('tubaina')">
         <div class="selection">
           <ion-icon name="checkmark-circle"></ion-icon>
         </div>
@@ -135,11 +135,11 @@
             <p>Geladinha</p>
           </div>
           <div class="price">
-            <p>R$ <span id="teste">3,00</span></p>
+            <p>R$ <span id="teste">2,00</span></p>
           </div>
         </div>
       </il>
-      <il class="drink-card fanta" onclick="select('fanta')">
+      <il class="drink-card fanta" onclick="selectDrink('fanta')">
         <div class="selection">
           <ion-icon name="checkmark-circle"></ion-icon>
         </div>
@@ -153,11 +153,11 @@
             <p>Bem gelada</p>
           </div>
           <div class="price">
-            <p>R$ <span id="teste">3,00</span></p>
+            <p>R$ <span id="teste">4,50</span></p>
           </div>
         </div>
       </il>
-      <il class="drink-card presunto" onclick="select('presunto')">
+      <il class="drink-card coca" onclick="selectDrink('coca')">
         <div class="selection">
           <ion-icon name="checkmark-circle"></ion-icon>
         </div>
@@ -171,7 +171,7 @@
             <p>Geladinha</p>
           </div>
           <div class="price">
-            <p>R$ <span id="teste">3,00</span></p>
+            <p>R$ <span id="teste">5,15</span></p>
           </div>
         </div>
       </il>
@@ -182,7 +182,7 @@
   <div class="desserts-section">
     <div class="desserts-tag">Por fim, sua sobremesa</div>
     <ul class="desserts-box">
-      <il class="dessert-card presunto" onclick="select('presunto')">
+      <il class="dessert-card churros" onclick="selectDessert('churros')">
         <div class="selection">
           <ion-icon name="checkmark-circle"></ion-icon>
         </div>
@@ -196,11 +196,11 @@
             <p>xicara de café</p>
           </div>
           <div class="price">
-            <p>R$ <span id="teste">3,00</span></p>
+            <p>R$ <span id="teste">1,00</span></p>
           </div>
         </div>
       </il>
-      <il class="dessert-card presunto" onclick="select('presunto')">
+      <il class="dessert-card bolo" onclick="selectDessert('bolo')">
         <div class="selection">
           <ion-icon name="checkmark-circle"></ion-icon>
         </div>
@@ -214,11 +214,11 @@
             <p>Uma fatia</p>
           </div>
           <div class="price">
-            <p>R$ <span id="teste">3,00</span></p>
+            <p>R$ <span id="teste">6,00</span></p>
           </div>
         </div>
       </il>
-      <il class="dessert-card presunto" onclick="select('presunto')">
+      <il class="dessert-card musse" onclick="selectDessert('musse')">
         <div class="selection">
           <ion-icon name="checkmark-circle"></ion-icon>
         </div>
@@ -232,11 +232,11 @@
             <p>Uma delícia</p>
           </div>
           <div class="price">
-            <p>R$ <span id="teste">3,00</span></p>
+            <p>R$ <span id="teste">5,25</span></p>
           </div>
         </div>
       </il>
-      <il class="dessert-card presunto" onclick="select('presunto')">
+      <il class="dessert-card pudim" onclick="selectDessert('pudim')">
         <div class="selection">
           <ion-icon name="checkmark-circle"></ion-icon>
         </div>
@@ -250,7 +250,7 @@
             <p>Alimenta uma pessoa</p>
           </div>
           <div class="price">
-            <p>R$ <span id="teste">3,00</span></p>
+            <p>R$ <span id="teste">4,75</span></p>
           </div>
         </div>
       </il>
@@ -258,9 +258,12 @@
     </ul>
   </div>
   <div class="baseboard" >
-    <div class="close" onclick="compra()">
+    <div class="close">
       <div class="close-text">
         <p>Selecione os 3 itens para fechar o pedido</p>
+      </div>
+      <div class="confirmation-button" onclick="finalScreen()">
+        <p>Fechar Pedido</p>
       </div>
     </div>
   </div>
@@ -269,16 +272,16 @@
       <h1>Confirme seu pedido</h1>
       <ul>
         <li>
-          <p>pedido</p><p>preco</p>
+          <p class="main-name">pedido</p><p class="main-price">preco</p>
         </li>
         <li>
-          <p>pedido</p><p>preco</p>
+          <p class="drink-name">pedido</p><p class="drink-price">preco</p>
         </li>
         <li>
-          <p>Pudim</p><p>preco</p>
+          <p class="dessert-name">Pudim</p><p class="dessert-price">preco</p>
         </li>
         <li>
-          <p>TOTAL</p><p>preco</p>
+          <p>TOTAL</p><p class="total-price">preco</p>
         </li>
       </ul>
       <div class="confirm">
