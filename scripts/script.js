@@ -8,6 +8,8 @@ let totalPrice = 0;
 let clientName = "";
 let clientAdress = "";
 let choicesSelected = 0;
+let requestString = "";
+let a=0;
 
 function selectMain(main){
   const selected = document.querySelector(".main-box .display");
@@ -23,15 +25,6 @@ function selectMain(main){
   choicesSelected++;
   mainName = document.querySelector("." + main + " h2").innerHTML;
   mainPrice = parseFloat(document.querySelector("."+main+" span").innerHTML.replace(",","."));
-
- 
-  console.log(mainName)
-  console.log(mainPrice)
-  console.log(drinkName)
-  console.log(drinkPrice)
-  console.log(dessertName)
-  console.log(dessertPrice)
-  console.log(choicesSelected)
 
   check();
 }
@@ -52,13 +45,6 @@ function selectDrink(drink){
   drinkName = document.querySelector("." + drink + " h2").innerHTML;
   drinkPrice = parseFloat(document.querySelector("."+drink+" span").innerHTML.replace(",","."));
 
-  console.log(mainName)
-  console.log(mainPrice)
-  console.log(drinkName)
-  console.log(drinkPrice)
-  console.log(dessertName)
-  console.log(dessertPrice)
-  console.log(choicesSelected)
   check();
 }
 
@@ -76,27 +62,27 @@ function selectDessert(dessert){
 
   dessertName = document.querySelector("." + dessert + " h2").innerHTML;
   dessertPrice = parseFloat(document.querySelector("." + dessert + " span").innerHTML.replace(",","."));
-  
-  console.log(mainName)
-  console.log(mainPrice)
-  console.log(drinkName)
-  console.log(drinkPrice)
-  console.log(dessertName)
-  console.log(dessertPrice)
-  console.log(choicesSelected)
 
   check();
 }
 
 function check(){
-  
   if(choicesSelected===3){
     document.querySelector(".confirmation-button").classList.add("display");
   }
 }
 
 function finalScreen(){
+  if(a===0){
+  clientName = prompt("Qual seu nome?");
+  clientAdress = prompt("Qual seu endereço?");
+  a=1;}
   totalPrice = mainPrice + drinkPrice + dessertPrice;
+  
+  requestString = "Olá, gostaria de fazer o pedido:\n- Prato: "+ mainName+"\n- Bebida: "+drinkName+"\n- Sobremesa: "+dessertName+"\nTotal: R$ "+String(totalPrice.toFixed(2)).replace(".",",")+"\n\nNome: "+clientName+"\nEndereço: "+clientAdress;
+  requestString = encodeURIComponent(requestString);
+  document.querySelector("a").setAttribute("href","https://wa.me/?text="+requestString);
+
   document.querySelector(".main-name").innerHTML = mainName;
   document.querySelector(".main-price").innerHTML = String(mainPrice.toFixed(2).replace(".",","));
   document.querySelector(".drink-name").innerHTML = drinkName;
