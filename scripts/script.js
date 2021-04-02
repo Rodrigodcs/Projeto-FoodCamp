@@ -81,7 +81,7 @@ function finalScreen(){
   
   requestString = "Olá, gostaria de fazer o pedido:\n- Prato: "+ mainName+"\n- Bebida: "+drinkName+"\n- Sobremesa: "+dessertName+"\nTotal: R$ "+String(totalPrice.toFixed(2)).replace(".",",")+"\n\nNome: "+clientName+"\nEndereço: "+clientAdress;
   requestString = encodeURIComponent(requestString);
-  document.querySelector("a").setAttribute("href","https://wa.me/55998129347?text="+requestString);
+  document.querySelector("a").setAttribute("href","https://wa.me/5545998129347?text="+requestString);
 
   document.querySelector(".main-name").innerHTML = mainName;
   document.querySelector(".main-price").innerHTML = String(mainPrice.toFixed(2).replace(".",","));
