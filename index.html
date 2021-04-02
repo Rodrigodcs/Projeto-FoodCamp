@@ -19,58 +19,246 @@
       <p>Sua comida em 6 minutos</p>
     </div>
   </div>
+
+<!-- MAIN SECTION ------------------------------------------------------------------------------------------->
+
   <div class="main-section">
     <div class="main-tag"><p>Primeiro, seu prato</p></div>
     <ul class="main-box">
-      <il class="main-card">
+      <il class="main-card presunto" onclick="select('presunto')">
+        <div class="selection">
+          <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
         <div class="card-content">
           <div class="image">
             <img src="images/main/sanduiche.jpg">
           </div>
           <h2>Sanduiche de presunto</h2>
           <div class="description">
-            <p>Muito presunto</p>
             <p>Isso isso isso isso</p>
           </div>
           <div class="price">
             <p>R$ <span id="teste">3,00</span></p>
           </div>
-          
         </div>
+      </il>
+      <il class="main-card bife" onclick="select('bife')">
         <div class="selection">
           <ion-icon name="checkmark-circle"></ion-icon>
         </div>
-        <!--<ion-icon name="checkmark-circle"></ion-icon>-->
-        
+        <div class="card-content">
+          <div class="image">
+            <img src="images/main/bife_a_cavalo.jpg">
+          </div>
+          <h2>Bife a Cavalo</h2>
+          <div class="description">
+            <p>Pode ter dois ovos</p>
+            <p>Acompanha feijão</p>
+          </div>
+          <div class="price">
+            <p>R$ <span id="teste">3,00</span></p>
+          </div>
+        </div>
       </il>
-      <il class="main-card"></il>
-      <il class="main-card"></il>
-      <il class="main-card"></il>
+      <il class="main-card spaghetti" onclick="select('spaghetti')">
+        <div class="selection">
+          <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="card-content">
+          <div class="image">
+            <img src="images/main/spaghetti.jpg">
+          </div>
+          <h2>Spaghetti</h2>
+          <div class="description">
+            <p>Molho vermelho</p>
+            <p>Queijo ralado</p>
+          </div>
+          <div class="price">
+            <p>R$ <span id="teste">3,00</span></p>
+          </div>
+        </div>
+      </il>
+      <il class="main-card frango" onclick="select('frango')">
+        <div class="selection">
+          <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="card-content">
+          <div class="image">
+            <img src="images/main/frango_yin_yang 1.png">
+          </div>
+          <h2>Frango Yin Yang</h2>
+          <div class="description">
+            <p>Um pouco de salada</p>
+            <p>Um pouco de batata</p>
+          </div>
+          <div class="price">
+            <p>R$ <span id="teste">3,00</span></p>
+          </div>
+        </div>
+      </il>
       <il class="overflow-padding"></il>
     </ul>
   </div>
+<!-- DRINKS SECTION ------------------------------------------------------------------------------------------->
   <div class="drinks-section">
     <div class="drinks-tag">Agora, sua bebida</div>
     <ul class="drinks-box">
-      <il class="drink-card"></il>
-      <il class="drink-card"></il>
-      <il class="drink-card"></il>
-      <il class="drink-card"></il>
+      <il class="drink-card tamarindo" onclick="select('tamarindo')">
+        <div class="selection">
+          <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="card-content">
+          <div class="image">
+            <img src="images/drinks/tamarindo.jpg">
+          </div>
+          <h2>Suco de Tamarindo</h2>
+          <div class="description">
+            <p>Pareçe suco de limão</p>
+            <p>Tem gosto de laranja</p>
+          </div>
+          <div class="price">
+            <p>R$ <span id="teste">3,00</span></p>
+          </div>
+        </div>
+      </il>
+      <il class="drink-card tubaina" onclick="select('tubaina')">
+        <div class="selection">
+          <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="card-content">
+          <div class="image">
+            <img src="images/drinks/tubaina.jpg">
+          </div>
+          <h2>Tubaína</h2>
+          <div class="description">
+            <p>Apenas garrafa</p>
+            <p>Geladinha</p>
+          </div>
+          <div class="price">
+            <p>R$ <span id="teste">3,00</span></p>
+          </div>
+        </div>
+      </il>
+      <il class="drink-card fanta" onclick="select('fanta')">
+        <div class="selection">
+          <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="card-content">
+          <div class="image">
+            <img src="images/drinks/fanta.jfif">
+          </div>
+          <h2>Fanta</h2>
+          <div class="description">
+            <p>Apenas lata</p>
+            <p>Bem gelada</p>
+          </div>
+          <div class="price">
+            <p>R$ <span id="teste">3,00</span></p>
+          </div>
+        </div>
+      </il>
+      <il class="drink-card presunto" onclick="select('presunto')">
+        <div class="selection">
+          <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="card-content">
+          <div class="image">
+            <img src="images/drinks/coquinha_gelada 1.png">
+          </div>
+          <h2>Coca-cola</h2>
+          <div class="description">
+            <p>Apenas lata</p>
+            <p>Geladinha</p>
+          </div>
+          <div class="price">
+            <p>R$ <span id="teste">3,00</span></p>
+          </div>
+        </div>
+      </il>
       <il class="overflow-padding"></il>
     </ul>
   </div>
+<!-- DESSERT SECTION ------------------------------------------------------------------------------------------->
   <div class="desserts-section">
     <div class="desserts-tag">Por fim, sua sobremesa</div>
     <ul class="desserts-box">
-      <il class="dessert-card"></il>
-      <il class="dessert-card"></il>
-      <il class="dessert-card"></il>
-      <il class="dessert-card"></il>
+      <il class="dessert-card presunto" onclick="select('presunto')">
+        <div class="selection">
+          <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="card-content">
+          <div class="image">
+            <img src="images/desserts/churros.jpg">
+          </div>
+          <h2>Churros D. Florinda</h2>
+          <div class="description double-line">
+            <p>Acompanha uma</p>
+            <p>xicara de café</p>
+          </div>
+          <div class="price">
+            <p>R$ <span id="teste">3,00</span></p>
+          </div>
+        </div>
+      </il>
+      <il class="dessert-card presunto" onclick="select('presunto')">
+        <div class="selection">
+          <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="card-content">
+          <div class="image">
+            <img src="images/desserts/bolo.jpg">
+          </div>
+          <h2>Bolo de chocolate</h2>
+          <div class="description">
+            <p>Da agua na boca</p>
+            <p>Uma fatia</p>
+          </div>
+          <div class="price">
+            <p>R$ <span id="teste">3,00</span></p>
+          </div>
+        </div>
+      </il>
+      <il class="dessert-card presunto" onclick="select('presunto')">
+        <div class="selection">
+          <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="card-content">
+          <div class="image">
+            <img src="images/desserts/musse.jpg">
+          </div>
+          <h2>Musse de maracujá</h2>
+          <div class="description">
+            <p>Bem docinho</p>
+            <p>Uma delícia</p>
+          </div>
+          <div class="price">
+            <p>R$ <span id="teste">3,00</span></p>
+          </div>
+        </div>
+      </il>
+      <il class="dessert-card presunto" onclick="select('presunto')">
+        <div class="selection">
+          <ion-icon name="checkmark-circle"></ion-icon>
+        </div>
+        <div class="card-content">
+          <div class="image">
+            <img src="images/desserts/pudim.png">
+          </div>
+          <h2>Pudim do Digão</h2>
+          <div class="description">
+            <p>5 kg de pudim</p>
+            <p>Alimenta uma pessoa</p>
+          </div>
+          <div class="price">
+            <p>R$ <span id="teste">3,00</span></p>
+          </div>
+        </div>
+      </il>
       <il class="overflow-padding"></il>
     </ul>
   </div>
-  <div class="baseboard" onclick="compra()">
-    <div class="close">
+  <div class="baseboard" >
+    <div class="close" onclick="compra()">
       <div class="close-text">
         <p>Selecione os 3 itens para fechar o pedido</p>
       </div>
@@ -87,7 +275,7 @@
           <p>pedido</p><p>preco</p>
         </li>
         <li>
-          <p>pedido</p><p>preco</p>
+          <p>Pudim</p><p>preco</p>
         </li>
         <li>
           <p>TOTAL</p><p>preco</p>

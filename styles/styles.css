@@ -98,10 +98,11 @@ h2 {
   color: #a6a6a6;
   font-weight: 300;
   font-size: 15px;
-  margin-top: 5px;
+  height: 40px;
+  margin-top: 10px;
 }
 .description p {
-  margin-bottom: 2px;
+  margin-top: 5px;
 }
 .price {
   position: absolute;
@@ -131,6 +132,9 @@ ion-icon {
   position: absolute;
   right: 5px;
   bottom: 5px;
+}
+.display {
+  display: flex;
 }
 
 /* RODAPÉ ------------------------------------------------------------------------------------*/
@@ -189,11 +193,15 @@ ion-icon {
   border-radius: 10px;
   box-shadow: 0px 0px 15px -3px black;
 }
+.confirmation-screen h1:nth-of-type(1) {
+  font-weight: 700;
+}
 .confirmation-screen ul {
   width: 100%;
   margin-top: 30px;
 }
 .confirmation-screen li {
+  font-weight: 300;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -211,9 +219,13 @@ ion-icon {
   margin-bottom: 25px;
   flex-direction: column;
   align-items: center;
+  font-weight: 700;
   justify-content: space-around;
   width: 330px;
   height: 50px;
   border-radius: 100px;
   background-color: white;
+}
+.display {
+  display: flex;
 }
