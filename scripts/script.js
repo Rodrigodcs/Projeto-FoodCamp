@@ -11,14 +11,13 @@ let choicesSelected = 0;
 let requestString = "";
 let a=0;
 
+// MAIN DISH SELECTOR
 function selectMain(main){
   const selected = document.querySelector(".main-box .display");
-
   if(selected !== null){
     selected.classList.remove("display");
     choicesSelected--;
   }
-  
   let seletor="." + main + " .selection";
   const c = document.querySelector(seletor);
   c.classList.add("display");
@@ -29,60 +28,55 @@ function selectMain(main){
   check();
 }
 
+// DRINK SELECTOR
 function selectDrink(drink){
-
   const selected = document.querySelector(".drinks-box .display");
   if(selected !== null){
     selected.classList.remove("display");
     choicesSelected--;
   }
-
   let seletor="." + drink + " .selection";
   const c = document.querySelector(seletor);
   c.classList.add("display");
   choicesSelected++;
-
   drinkName = document.querySelector("." + drink + " h2").innerHTML;
   drinkPrice = parseFloat(document.querySelector("."+drink+" span").innerHTML.replace(",","."));
-
   check();
 }
 
+// DESSERT SELECTOR
 function selectDessert(dessert){
   const selected = document.querySelector(".desserts-box .display");
   if(selected !== null){
     selected.classList.remove("display");
     choicesSelected--;
   }
-
   let seletor = "." + dessert + " .selection";
   const c = document.querySelector(seletor);
   c.classList.add("display");
   choicesSelected++;
-
   dessertName = document.querySelector("." + dessert + " h2").innerHTML;
-  dessertPrice = parseFloat(document.querySelector("." + dessert + " span").innerHTML.replace(",","."));
-
+  dessertPrice = parseFloat(document.querySelector("." + dessert + " span").innerHTML.replace(",","."))
   check();
 }
 
+// CHECK IF 3 CHOICES ARE SELECTED
 function check(){
   if(choicesSelected===3){
     document.querySelector(".confirmation-button").classList.add("display");
   }
 }
 
+// CREATES LINK TO WHATSAPP
 function finalScreen(){
   if(a===0){
   clientName = prompt("Qual seu nome?");
   clientAdress = prompt("Qual seu endereço?");
   a=1;}
   totalPrice = mainPrice + drinkPrice + dessertPrice;
-  
   requestString = "Olá, gostaria de fazer o pedido:\n- Prato: "+ mainName+"\n- Bebida: "+drinkName+"\n- Sobremesa: "+dessertName+"\nTotal: R$ "+String(totalPrice.toFixed(2)).replace(".",",")+"\n\nNome: "+clientName+"\nEndereço: "+clientAdress;
   requestString = encodeURIComponent(requestString);
   document.querySelector("a").setAttribute("href","https://wa.me/5545998129347?text="+requestString);
-
   document.querySelector(".main-name").innerHTML = mainName;
   document.querySelector(".main-price").innerHTML = String(mainPrice.toFixed(2).replace(".",","));
   document.querySelector(".drink-name").innerHTML = drinkName;
@@ -93,6 +87,7 @@ function finalScreen(){
   document.querySelector(".confirmation-background").classList.add("display");
 }
 
+// CANCEL BUTTON
 function cancel(){
   document.querySelector(".confirmation-background").classList.remove("display");
 }
